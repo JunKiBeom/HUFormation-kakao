@@ -84,7 +84,7 @@ def db_insert(inmoon,gyosoo,sky_lounge,hooseng,umoon,dorm,professor,gookje,cur=N
                     insert_menu(cur, "후생관", ('',hooseng[2],hooseng[2]))
                     insert_menu(cur, "후생관", ('', '', hooseng[3] if hooseng[3] else ''))
                 elif '석식' in hooseng[2]:
-                    insert_menu(cur, "후생관", ('', '', hooseng[4] if hooseng[4] else ''))
+                    insert_menu(cur, "후생관", ('', '', hooseng[2] if hooseng[2] else ''))
 
     elif '탕류' in hooseng[0]:
         if '뚝배기' in hooseng[1]:
